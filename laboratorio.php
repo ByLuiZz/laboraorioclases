@@ -56,31 +56,253 @@ class Marca implements Vehiculo, Taxi, Autobus{
         return $this->potenciaCV;
     }
 }
-echo "<h2>Taxis</h2>";
-echo "<table>";
+
+
+//Taxi
+
+echo
+"<h1>TAXI</h1>";
+echo
+"<table border='5'>";
 echo "<tr>
-<th>Matrícula</th>
+<th>Matricula</th>
 <th> Modelo</th>
 <th> Potencia CV</th>
-<th> Número de plazas</th>
-<th> Número de licencia</th>
+<th> Numero de plazas</th>
+<th> Numero de licencia</th>
 </tr>";
-$Chevrolet =new Marca (1255, " Corvette ", 600);
+$Taxi =new Marca (1255, " Chevrolet Corvette ", 600);
 echo '<td>';
-echo $Chevrolet->getMatricula();
+echo $Taxi->getMatricula();
 echo '</td>';
 echo '<td>';
-echo $Chevrolet->getModelo();
+echo $Taxi->getModelo();
 echo '</td>';
 echo '<td>';
-echo $Chevrolet->getPotenciaCV();
+echo $Taxi->getPotenciaCV();
 echo '</td>';
 echo '<td>';
-echo $Chevrolet->setNumeroDePlazas(3);
-echo $Chevrolet->setNumeroLicencia(150);
+echo $Taxi->setNumeroDePlazas(3);
+echo $Taxi->setNumeroLicencia(15089);
 echo '<td>';
-echo $Chevrolet->getNumeroDePlazas();
+echo $Taxi->getNumeroDePlazas(3);
 echo '</td>';
 echo '<td>';
-echo $Chevrolet->getNumeroLicencia();
+echo $Taxi->getNumeroLicencia();
 echo '</td>';
+
+echo "<tr>";
+$Taxi =new Marca (1589, " Nissan GT-R ", 800);
+echo '<td>';
+echo $Taxi->getMatricula();
+echo '</td>';
+echo '<td>';
+echo $Taxi->getModelo();
+echo '</td>';
+echo '<td>';
+echo $Taxi->getPotenciaCV();
+echo '</td>';
+echo '<td>';
+echo $Taxi->setNumeroDePlazas(5);
+echo $Taxi->setNumeroLicencia(88590);
+echo '<td>';
+echo $Taxi->getNumeroDePlazas();
+echo '</td>';
+echo '<td>';
+echo $Taxi->getNumeroLicencia();
+echo '</td>';
+echo "<tr>";
+
+echo "<tr>";
+$Taxi =new Marca (8088, " Mustang Shelby  ", 600);
+echo '<td>';
+echo $Taxi->getMatricula();
+echo '</td>';
+echo '<td>';
+echo $Taxi->getModelo();
+echo '</td>';
+echo '<td>';
+echo $Taxi->getPotenciaCV();
+echo '</td>';
+echo '<td>';
+echo $Taxi->setNumeroDePlazas(6);
+echo $Taxi->setNumeroLicencia(85968);
+echo '<td>';
+echo $Taxi->getNumeroDePlazas();
+echo '</td>';
+echo '<td>';
+echo $Taxi->getNumeroLicencia();
+echo '</td>';
+echo "<tr>";
+
+echo "<tr>";
+$Taxi =new Marca (5896, " Ford Shelby  ", 850);
+echo '<td>';
+echo $Taxi->getMatricula();
+echo '</td>';
+echo '<td>';
+echo $Taxi->getModelo();
+echo '</td>';
+echo '<td>';
+echo $Taxi->getPotenciaCV();
+echo '</td>';
+echo '<td>';
+echo $Taxi->setNumeroDePlazas(6);
+echo $Taxi->setNumeroLicencia(896378);
+echo '<td>';
+echo $Taxi->getNumeroDePlazas();
+echo '</td>';
+echo '<td>';
+echo $Taxi->getNumeroLicencia();
+echo '</td>';
+echo "<tr>";
+
+echo "<tr>";
+$Taxi =new Marca (5963, " Chevrolet Camaro  ", 800);
+echo '<td>';
+echo $Taxi->getMatricula();
+echo '</td>';
+echo '<td>';
+echo $Taxi->getModelo();
+echo '</td>';
+echo '<td>';
+echo $Taxi->getPotenciaCV();
+echo '</td>';
+echo '<td>';
+echo $Taxi->setNumeroDePlazas(4);
+echo $Taxi->setNumeroLicencia(59638);
+echo '<td>';
+echo $Taxi->getNumeroDePlazas();
+echo '</td>';
+echo '<td>';
+echo $Taxi->getNumeroLicencia();
+echo '</td>';
+echo "<tr>";
+echo "</table>";
+
+echo "<tr>";
+echo
+"<h1>AUTOBUS</h1>";
+echo "</tr>";
+echo
+"<table border='5'>";
+echo "<tr>
+<th>Matricula</th>
+<th> Modelo</th>
+<th> Potencia CV</th>
+<th> Numero de plazas</th>
+<th> Numero de licencia</th>
+</tr>";
+
+
+
+echo "<tr>";
+$Bus =new Marca (8596, " 10Scania  ", 500);
+echo '<td>';
+echo $Bus ->getMatricula();
+echo '</td>';
+echo '<td>';
+echo $Bus ->getModelo();
+echo '</td>';
+echo '<td>';
+echo $Bus ->getPotenciaCV();
+echo '</td>';
+echo '<td>';
+echo $Bus ->setNumeroDePlazas(25);
+echo $Bus ->setNumeroLicencia(45896);
+echo '<td>';
+echo $Bus ->getNumeroDePlazas();
+echo '</td>';
+echo '<td>';
+echo $Bus ->getNumeroLicencia();
+echo '</td>';
+echo "<tr>";
+
+echo "<tr>";
+$Bus =new Marca (7799, " 9Autobuses Volvo  ", 500);
+echo '<td>';
+echo $Bus ->getMatricula();
+echo '</td>';
+echo '<td>';
+echo $Bus ->getModelo();
+echo '</td>';
+echo '<td>';
+echo $Bus ->getPotenciaCV();
+echo '</td>';
+echo '<td>';
+echo $Bus ->setNumeroDePlazas(25);
+echo $Bus ->setNumeroLicencia(89636);
+echo '<td>';
+echo $Bus ->getNumeroDePlazas();
+echo '</td>';
+echo '<td>';
+echo $Bus ->getNumeroLicencia();
+echo '</td>';
+echo "<tr>";
+
+echo "<tr>";
+$Bus =new Marca (8080, " 8Autobus  ", 330);
+echo '<td>';
+echo $Bus ->getMatricula();
+echo '</td>';
+echo '<td>';
+echo $Bus ->getModelo();
+echo '</td>';
+echo '<td>';
+echo $Bus ->getPotenciaCV();
+echo '</td>';
+echo '<td>';
+echo $Bus ->setNumeroDePlazas(30);
+echo $Bus ->setNumeroLicencia(89632);
+echo '<td>';
+echo $Bus ->getNumeroDePlazas();
+echo '</td>';
+echo '<td>';
+echo $Bus ->getNumeroLicencia();
+echo '</td>';
+echo "<tr>";
+
+echo "<tr>";
+$Bus =new Marca (7777, " 6Zhongtong  ", 450);
+echo '<td>';
+echo $Bus ->getMatricula();
+echo '</td>';
+echo '<td>';
+echo $Bus ->getModelo();
+echo '</td>';
+echo '<td>';
+echo $Bus ->getPotenciaCV();
+echo '</td>';
+echo '<td>';
+echo $Bus ->setNumeroDePlazas(30);
+echo $Bus ->setNumeroLicencia(85965);
+echo '<td>';
+echo $Bus ->getNumeroDePlazas();
+echo '</td>';
+echo '<td>';
+echo $Bus ->getNumeroLicencia();
+echo '</td>';
+echo "<tr>";
+
+
+echo "<tr>";
+$Bus =new Marca (111, " 5Marcopolo SA  ", 650);
+echo '<td>';
+echo $Bus ->getMatricula();
+echo '</td>';
+echo '<td>';
+echo $Bus ->getModelo();
+echo '</td>';
+echo '<td>';
+echo $Bus ->getPotenciaCV();
+echo '</td>';
+echo '<td>';
+echo $Bus ->setNumeroDePlazas(35);
+echo $Bus ->setNumeroLicencia(85693);
+echo '<td>';
+echo $Bus ->getNumeroDePlazas();
+echo '</td>';
+echo '<td>';
+echo $Bus ->getNumeroLicencia();
+echo '</td>';
+echo "<tr>";
